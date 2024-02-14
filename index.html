@@ -1,0 +1,26 @@
+<html>
+<head>
+    <title>Javascript</title>
+</head>
+<body>10.0
+    <div id="zone">Zone</div>
+    <script>
+      function into() {
+        document.getElementById("zone").innerText = "enter";
+      }
+    
+      function out() {
+        document.getElementById("zone").innerText = "out";
+      }
+    
+      function bgColor() {
+        document.getElementById("zone").style.backgroundColor = "blue";
+      }
+    
+      document.getElementById("zone").onmousemove = into;
+      document.getElementById("zone").onmouseout = out;
+      document.getElementById("zone").onkeydown = bgColor;
+    </script>
+    <script src="app.js"></script>
+</body>
+</html>
